@@ -1,7 +1,7 @@
 # college-admissions-data-analysis
 Exploratory analysis of academic factors influencing college admissions and first-year performance
-Analysis Questions
 
+Analysis Questions
     What is the overall admission rate?
     How do SAT Total scores differ between admitted and non-admitted students?
     How does high school GPA compare between admitted and non-admitted students?
