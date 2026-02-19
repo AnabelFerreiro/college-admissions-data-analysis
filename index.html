@@ -6,36 +6,63 @@
   <title>Anabel Ferreiro Perez | Data Analytics Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <div class="nav">
-  <div class="nav-inner">
-    <div class="brand">Anabel Ferreiro Perez</div>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
+  <!-- NAV -->
+  <div class="nav" id="home">
+    <div class="container nav-inner">
+      <div class="brand">Anabel Ferreiro Perez</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+      </div>
     </div>
   </div>
-</div>
 
-
+  <!-- HERO -->
   <div class="container hero">
-    <h1>Data Analytics Portfolio</h1>
-    <div class="subtitle">
-      Business Analytics & Information Systems(Cybersecurity concentration) student at University of South Florida. Interested in Data Analyst / Business Analyst internships.
+    <div class="hero-grid">
+      <div>
+        <h1>Data Analytics Portfolio</h1>
+        <div class="subtitle">
+          Business Analytics & Information Systems (Cybersecurity concentration) student at the University of South Florida.
+          Interested in Data Analyst internships.
+        </div>
+
+        <div class="actions">
+          <a class="btn primary" href="projects.html">View Projects</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/anabel-ferreiro/" target="_blank">LinkedIn</a>
+          <a class="btn ghost" href="assets/Ferreiro_Perez_Anabel_Resume.pdf" target="_blank">Resume</a>
+          <a class="btn ghost" href="mailto:anabelferreiro02@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <!-- OPTIONAL SIDE CARD -->
+      <div class="hero-card">
+        <div style="font-weight:800; font-size:16px;">Quick Snapshot</div>
+        <div style="color:var(--muted); font-size:13px; margin-top:6px;">
+          Tools + focus areas I use most often.
+        </div>
+
+        <div class="kpi">
+          <div>
+            <div class="label">Primary Tools</div>
+            <div class="value">Excel • Tableau • Power BI</div>
+          </div>
+          <div>
+            <div class="label">Focus</div>
+            <div class="value">Dashboards • Insights • Storytelling</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <a class="btn primary" href="projects.html">View Projects</a>
-    <a class="btn" href="https://www.linkedin.com/in/anabel-ferreiro/" target="_blank">LinkedIn</a>
-    <a class="btn btn-outline" 
-   href="assets/Ferreiro_Perez_Anabel_Resume.pdf" 
-   target="_blank">
-   Resume
-  </a>
-    <a class="btn" href="mailto:anabelferreiro02@gmail.com">Email</a>
-
+  <!-- SKILLS -->
+  <div class="container section">
     <h2 class="section-title">Core Skills</h2>
-    <div>
+    <div class="tags">
       <span class="tag">Excel (Pivot Tables)</span>
       <span class="tag">Tableau Public</span>
       <span class="tag">Data Cleaning</span>
@@ -43,8 +70,12 @@
       <span class="tag">Power BI</span>
       <span class="tag">Storytelling with Data</span>
     </div>
+  </div>
 
+  <!-- PROJECTS -->
+  <div class="container section" id="projects">
     <h2 class="section-title">Featured Project</h2>
+
     <div class="grid">
       <div class="card">
         <h3>College Admissions & Performance Analysis</h3>
@@ -52,18 +83,31 @@
           Explored admission outcomes, SAT vs HS GPA differences, and which metric better predicts first-year GPA
           using regression trend models (R² comparison).
         </p>
-        <a class="btn primary" href="projects.html">Open Project</a>
+        <div class="meta">
+          <span class="pill">Excel</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">Regression</span>
+        </div>
+        <div class="actions" style="margin-top:12px;">
+          <a class="btn primary" href="projects.html">Open Project</a>
+          <a class="btn ghost" href="data/README.md">View Data Notes</a>
+        </div>
       </div>
     </div>
+  </div>
 
+  <!-- ABOUT -->
+  <div class="container section">
     <h2 class="section-title">About</h2>
-    <p>
-      I enjoy turning raw datasets into clean visuals and clear takeaways. I document my work with
-      assumptions, metrics, and concise summaries so results are easy to communicate.
+    <p style="color:var(--muted); max-width: 70ch;">
+      I enjoy turning raw datasets into clean visuals and clear takeaways.
+      I document assumptions, metrics, and concise summaries so results are easy to communicate.
     </p>
   </div>
 
-  <div class="footer">© 2026 Anabel Ferreiro Perez— Built with GitHub Pages</div>
+  <div class="footer">
+    <div class="container">© 2026 Anabel Ferreiro Perez — Built with GitHub Pages</div>
+  </div>
 
 </body>
 </html>
