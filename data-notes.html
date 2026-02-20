@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Notes | Anabel Ferreiro Perez</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Anabel Ferreiro Perez</div>
+
+      <div class="nav-links">
+        <a href="index.html#home" class="nav-pill">Home</a>
+        <a href="projects.html" class="nav-pill">Projects</a>
+        <button id="themeToggle" class="nav-pill theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container section" style="padding-top:28px; max-width:80ch;">
+
+    <h1 style="margin-top:0;">Data Notes</h1>
+
+    <p class="subtitle">
+      Additional context about the dataset, methodology, and assumptions used in the College Admissions & Performance Analysis project.
+    </p>
+
+    <div class="card" style="margin-top:20px;">
+      <h3 style="margin-top:0;">Project Context</h3>
+      <p style="color:var(--muted); margin:0;">
+        This project was completed as part of an in-class analytics exercise.
+        The objective was to evaluate which metric — SAT score or High School GPA —
+        better predicts first-year college GPA using regression analysis.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3 style="margin-top:0;">Business Question</h3>
+      <p style="color:var(--muted); margin:0;">
+        Which metric is a stronger predictor of first-year academic performance,
+        and how could admissions teams use that insight to improve decision-making?
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3 style="margin-top:0;">Dataset</h3>
+      <ul style="color:var(--muted); padding-left:18px; margin:0;">
+        <li>Dataset included student-level SAT scores, High School GPA, and first-year college GPA.</li>
+        <li>Variables were standardized for comparison.</li>
+        <li>Missing or incomplete observations were excluded where necessary.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3 style="margin-top:0;">Methodology</h3>
+      <ul style="color:var(--muted); padding-left:18px; margin:0;">
+        <li>Built regression models comparing SAT and HS GPA as predictors.</li>
+        <li>Evaluated explanatory strength using R² values.</li>
+        <li>Compared predictive power across variables to determine stronger indicator.</li>
+      </ul>
+    </div>
+
+    <div class="actions" style="margin-top:20px;">
+      <a class="btn primary" href="projects.html">Back to Project</a>
+      <a class="btn ghost" href="index.html#projects">Back to Home</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="container">© 2026 Anabel Ferreiro Perez — Built with GitHub Pages</div>
+  </div>
+
+  <!-- Theme Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("themeToggle");
+      if (!toggle) return;
+
+      const icon = toggle.querySelector(".theme-icon");
+      const root = document.documentElement;
+
+      const savedTheme = localStorage.getItem("theme") || "light";
+      root.setAttribute("data-theme", savedTheme);
+      if (icon) icon.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+
+      toggle.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+        if (icon) icon.textContent = next === "dark" ? "☀️" : "🌙";
+      });
+    });
+  </script>
+
+</body>
+</html>
