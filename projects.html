@@ -1,38 +1,87 @@
-<div class="container section">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Anabel Ferreiro Perez</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <h1>College Admissions & Performance Analysis</h1>
+<body>
 
-  <p style="color:var(--muted); max-width:70ch; margin-bottom:20px;">
-    This project explores admission outcomes, compares SAT vs High School GPA
-    as predictors of first-year college performance, and evaluates regression
-    strength using R² models.
-  </p>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Anabel Ferreiro Perez</div>
 
-  <!-- Key Insights -->
-  <div class="card" style="margin-bottom:20px;">
-    <h3>Key Findings</h3>
-    <ul style="color:var(--muted); padding-left:18px;">
-      <li>High School GPA showed stronger predictive power for first-year GPA.</li>
-      <li>SAT scores had moderate correlation but lower explanatory strength.</li>
-      <li>Regression analysis helped identify which metric better predicts academic success.</li>
-    </ul>
+      <div class="nav-links">
+        <a href="index.html#home" class="nav-pill">Home</a>
+        <a href="projects.html" class="nav-pill">Projects</a>
+
+        <button id="themeToggle" class="nav-pill theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
   </div>
 
-  <!-- Tableau Button -->
-  <div class="actions">
-    <a class="btn primary"
-       href="https://public.tableau.com/views/CollegeAdmissionAnalysis_17715174208750/Dashboard1"
-       target="_blank"
-       rel="noopener">
-       View Interactive Dashboard
-    </a>
+  <!-- CONTENT -->
+  <div class="container hero" style="padding-top:36px;">
+    <div style="max-width:80ch;">
+      <h1 style="margin-top:0;">College Admissions & Performance Analysis</h1>
 
-    <a class="btn ghost"
-       href="https://public.tableau.com/views/CollegeAdmissionAnalysis_17715174208750/Dashboard1"
-       target="_blank"
-       rel="noopener">
-       Open in Tableau Public
-    </a>
+      <div class="subtitle">
+        This project explores admission outcomes, compares SAT vs High School GPA as predictors of
+        first-year college performance, and evaluates regression strength using R² models.
+      </div>
+
+      <div class="actions" style="margin-top:16px;">
+        <a class="btn primary"
+           href="https://public.tableau.com/views/CollegeAdmissionAnalysis_17715174208750/Dashboard1"
+           target="_blank"
+           rel="noopener">
+          View Interactive Dashboard
+        </a>
+
+        <a class="btn ghost" href="index.html#projects">Back to Home</a>
+      </div>
+    </div>
   </div>
 
-</div>
+  <!-- KEY FINDINGS -->
+  <div class="container section">
+    <div class="card">
+      <h3 style="margin-top:0;">Key Findings</h3>
+      <ul style="color:var(--muted); padding-left:18px; margin:0;">
+        <li>High School GPA showed stronger predictive power for first-year GPA.</li>
+        <li>SAT scores had moderate correlation but lower explanatory strength.</li>
+        <li>Regression analysis helped identify which metric better predicts academic success.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">© 2026 Anabel Ferreiro Perez — Built with GitHub Pages</div>
+  </div>
+
+  <!-- Theme Script (same as your index) -->
+  <script>
+    const toggle = document.getElementById("themeToggle");
+    const icon = toggle.querySelector(".theme-icon");
+    const root = document.documentElement;
+
+    const savedTheme = localStorage.getItem("theme") || "light";
+    root.setAttribute("data-theme", savedTheme);
+    icon.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+
+    toggle.addEventListener("click", () => {
+      const current = root.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+      icon.textContent = next === "dark" ? "☀️" : "🌙";
+    });
+  </script>
+
+</body>
+</html>
