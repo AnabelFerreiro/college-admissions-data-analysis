@@ -39,7 +39,7 @@ a{ color:inherit; text-decoration:none; }
 }
 
 /* ========== Navbar ========== */
-.nav-links a:hover{ color: var(--text); }
+.nav-links a:hover{ color: var(--accent); }
 .nav{
   position: sticky;
   top: 0;
@@ -80,11 +80,13 @@ a{ color:inherit; text-decoration:none; }
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
   cursor:pointer;
 }
-/* hover = se levanta */
 .nav-pill:hover{
   transform: translateY(-2px);
   box-shadow: var(--shadow);
-  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 
 /* click = tap */
