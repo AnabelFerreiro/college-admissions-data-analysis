@@ -1,87 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Anabel Ferreiro Perez</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<!-- CONTENT -->
+<div class="container hero" style="padding-top:36px;">
+  <div style="max-width:90ch;">
+    <div class="breadcrumb">
+      <a href="projects.html">Projects</a>
+      <span class="crumb-sep">/</span>
+      <span>College Admissions & Performance Analysis</span>
+    </div>
 
-<body>
+    <h1 style="margin-top:10px;">College Admissions & Performance Analysis</h1>
 
-  <!-- NAV -->
-  <div class="nav">
-    <div class="container nav-inner">
-      <div class="brand">Anabel Ferreiro Perez</div>
+    <div class="subtitle">
+      This project explores admission outcomes, compares SAT vs High School GPA as predictors of
+      first-year college performance, and evaluates regression strength using R² models.
+    </div>
 
-      <div class="nav-links">
-        <a href="index.html#home" class="nav-pill">Home</a>
-        <a href="projects.html" class="nav-pill">Projects</a>
+    <div class="actions" style="margin-top:16px;">
+      <a class="btn primary"
+         href="https://public.tableau.com/views/CollegeAdmissionAnalysis_17715174208750/Dashboard1"
+         target="_blank"
+         rel="noopener">
+        View Interactive Dashboard
+      </a>
 
-        <button id="themeToggle" class="nav-pill theme-toggle" aria-label="Toggle theme" title="Toggle theme">
-          <span class="theme-icon">🌙</span>
-        </button>
-      </div>
+      <a class="btn ghost" href="index.html#projects">Back to Home</a>
     </div>
   </div>
+</div>
 
-  <!-- CONTENT -->
-  <div class="container hero" style="padding-top:36px;">
-    <div style="max-width:80ch;">
-      <h1 style="margin-top:0;">College Admissions & Performance Analysis</h1>
-
-      <div class="subtitle">
-        This project explores admission outcomes, compares SAT vs High School GPA as predictors of
-        first-year college performance, and evaluates regression strength using R² models.
-      </div>
-
-      <div class="actions" style="margin-top:16px;">
-        <a class="btn primary"
-           href="https://public.tableau.com/views/CollegeAdmissionAnalysis_17715174208750/Dashboard1"
-           target="_blank"
-           rel="noopener">
-          View Interactive Dashboard
-        </a>
-
-        <a class="btn ghost" href="index.html#projects">Back to Home</a>
-      </div>
+<!-- SNAPSHOT -->
+<div class="container section">
+  <div class="snapshot">
+    <div class="snap-card">
+      <div class="snap-label">Tools</div>
+      <div class="snap-value">Tableau • Excel</div>
+    </div>
+    <div class="snap-card">
+      <div class="snap-label">Methods</div>
+      <div class="snap-value">Regression • R² Comparison</div>
+    </div>
+    <div class="snap-card">
+      <div class="snap-label">Focus</div>
+      <div class="snap-value">Admissions • Student Success</div>
+    </div>
+    <div class="snap-card">
+      <div class="snap-label">Deliverable</div>
+      <div class="snap-value">Interactive Dashboard</div>
     </div>
   </div>
+</div>
 
-  <!-- KEY FINDINGS -->
-  <div class="container section">
+<!-- CONTEXT -->
+<div class="container section">
+  <div class="grid-2">
     <div class="card">
-      <h3 style="margin-top:0;">Key Findings</h3>
+      <h3 style="margin-top:0;">Business Question</h3>
+      <p style="color:var(--muted); margin:0;">
+        Which metric is a stronger predictor of first-year college GPA—SAT scores or High School GPA—
+        and how can admissions teams use that insight to improve decision-making?
+      </p>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0;">Approach</h3>
       <ul style="color:var(--muted); padding-left:18px; margin:0;">
-        <li>High School GPA showed stronger predictive power for first-year GPA.</li>
-        <li>SAT scores had moderate correlation but lower explanatory strength.</li>
-        <li>Regression analysis helped identify which metric better predicts academic success.</li>
+        <li>Explored relationships between admissions variables and first-year GPA.</li>
+        <li>Compared regression strength using R² values across predictors.</li>
+        <li>Built an interactive dashboard to communicate trends and outcomes.</li>
       </ul>
     </div>
   </div>
+</div>
 
-  <div class="footer">
-    <div class="container">© 2026 Anabel Ferreiro Perez — Built with GitHub Pages</div>
+<!-- DASHBOARD PREVIEW -->
+<div class="container section">
+  <div class="card" style="padding:18px;">
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+      <div>
+        <h3 style="margin:0;">Dashboard Preview</h3>
+        <div style="color:var(--muted); font-size:14px; margin-top:4px;">
+          Click the preview to open the interactive Tableau dashboard.
+        </div>
+      </div>
+
+      <a class="btn ghost"
+         href="https://public.tableau.com/views/CollegeAdmissionAnalysis_17715174208750/Dashboard1"
+         target="_blank"
+         rel="noopener">
+        Open Dashboard
+      </a>
+    </div>
+
+    <a class="preview-link"
+       href="https://public.tableau.com/views/CollegeAdmissionAnalysis_17715174208750/Dashboard1"
+       target="_blank"
+       rel="noopener"
+       aria-label="Open interactive Tableau dashboard">
+      <!-- Reemplaza el src con TU screenshot cuando lo tengas -->
+      <img class="preview-img"
+           src="assets/tableau-preview.png"
+           alt="Tableau dashboard preview (College Admissions & Performance Analysis)">
+    </a>
+
+    <div style="color:var(--muted); font-size:12px; margin-top:10px;">
+      Tip: export a screenshot from Tableau (or take a clean screenshot) and save it as
+      <code>assets/tableau-preview.png</code>.
+    </div>
+  </div>
+</div>
+
+<!-- KEY FINDINGS (tiles) -->
+<div class="container section">
+  <h2 class="section-title">Key Findings</h2>
+
+  <div class="findings">
+    <div class="finding">
+      <div class="finding-title">Stronger predictor</div>
+      <div class="finding-text">High School GPA showed stronger predictive power for first-year GPA.</div>
+    </div>
+
+    <div class="finding">
+      <div class="finding-title">SAT effect</div>
+      <div class="finding-text">SAT scores had moderate correlation but lower explanatory strength.</div>
+    </div>
+
+    <div class="finding">
+      <div class="finding-title">Decision support</div>
+      <div class="finding-text">Regression analysis clarified which metric better predicts academic success.</div>
+    </div>
   </div>
 
-  <!-- Theme Script (same as your index) -->
-  <script>
-    const toggle = document.getElementById("themeToggle");
-    const icon = toggle.querySelector(".theme-icon");
-    const root = document.documentElement;
-
-    const savedTheme = localStorage.getItem("theme") || "light";
-    root.setAttribute("data-theme", savedTheme);
-    icon.textContent = savedTheme === "dark" ? "☀️" : "🌙";
-
-    toggle.addEventListener("click", () => {
-      const current = root.getAttribute("data-theme");
-      const next = current === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      localStorage.setItem("theme", next);
-      icon.textContent = next === "dark" ? "☀️" : "🌙";
-    });
-  </script>
-
-</body>
-</html>
+  <div class="actions" style="margin-top:16px;">
+    <a class="btn primary"
+       href="https://public.tableau.com/views/CollegeAdmissionAnalysis_17715174208750/Dashboard1"
+       target="_blank"
+       rel="noopener">
+      View Interactive Dashboard
+    </a>
+    <a class="btn ghost" href="index.html#projects">Back to Home</a>
+  </div>
+</div>
