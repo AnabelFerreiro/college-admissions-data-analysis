@@ -39,6 +39,7 @@ a{ color:inherit; text-decoration:none; }
 }
 
 /* ========== Navbar ========== */
+.nav-links a:hover{ color: var(--text); }
 .nav{
   position: sticky;
   top: 0;
@@ -60,11 +61,43 @@ a{ color:inherit; text-decoration:none; }
 .nav-links{
   display:flex;
   align-items:center;
-  gap:18px;
+  gap:10px; 
   font-weight:600;
   color: var(--muted);
 }
-.nav-links a:hover{ color: var(--text); }
+.nav-pill{
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  text-decoration:none;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+  cursor:pointer;
+}
+/* hover = se levanta */
+.nav-pill:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+}
+
+/* click = tap */
+.nav-pill:active{
+  transform: translateY(0px) scale(0.98);
+  box-shadow:none;
+}
+
+/* focus accesible */
+.nav-pill:focus-visible{
+  outline: 3px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  outline-offset: 2px;
+}
 
 /* ========== Hero ========== */
 .hero{
@@ -212,23 +245,11 @@ h1{
   .grid{ grid-template-columns: 1fr; }
 }
 /*--------- Theme Toggle---------*/
-.theme-toggle{
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-}
 
-.theme-toggle:hover{
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
+.theme-toggle{
+  width: 40px;
+  height: 40px;
+  padding: 0;
 }
 
 /* Mejoras para que dark/light se vean consistentes */
@@ -247,5 +268,5 @@ h1{
   color: var(--text);
 }
   
-}
+
 
