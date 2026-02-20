@@ -17,8 +17,8 @@ html[data-theme="dark"]{
   --border: rgba(255,255,255,0.12);
   --card: rgba(255,255,255,0.06);
   --shadow: 0 12px 30px rgba(0,0,0,0.35);
-  --accent: #60a5fa;
-  --accent-2:#3b82f6;
+  --accent: #A97C7C;
+  --accent-2:#8B5E5E;
 }
 *{ box-sizing:border-box; }
 html{ scroll-behavior:smooth; }
@@ -148,24 +148,50 @@ h1{
   gap: 12px;
   margin-top: 18px;
 }
+/* ========== Buttons (Plain -> Accent on Hover) ========== */
 .btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
   padding: 10px 14px;
   border-radius: 12px;
+
+  /* plain default */
+  background: var(--card);
   border: 1px solid var(--border);
+  color: var(--text);
   font-weight: 700;
+
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease, color .18s ease;
 }
-.btn.primary{
+
+/* hover = becomes accent */
+.btn:hover{
   background: var(--accent);
   border-color: var(--accent);
-  color:#fff;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
-.btn.primary:hover{ background: var(--accent-2); }
-.btn.ghost:hover{
-  border-color:#cbd5e1;
-  background:#f8fafc;
+
+/* click/tap */
+.btn:active{
+  transform: translateY(0px) scale(0.98);
+  box-shadow:none;
+}
+
+/* accessible focus */
+.btn:focus-visible{
+  outline: 3px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  outline-offset: 2px;
+}
+
+/* make primary/ghost identical (same behavior) */
+.btn.primary,
+.btn.ghost{
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--text);
 }
 
 /* ========== Sections ========== */
