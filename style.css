@@ -284,14 +284,10 @@ h1{
   gap:8px;
   margin-bottom: 6px;
 }
-.breadcrumb a{
-  color: var(--muted);
-  text-decoration:none;
-}
+.breadcrumb a{ color: var(--muted); }
 .breadcrumb a:hover{ color: var(--text); }
 .crumb-sep{ opacity: 0.6; }
 
-/* snapshot grid */
 .snapshot{
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -304,23 +300,9 @@ h1{
   padding: 14px;
   box-shadow: var(--shadow);
 }
-.snap-label{
-  color: var(--muted);
-  font-size: 12px;
-}
-.snap-value{
-  font-weight: 800;
-  margin-top: 6px;
-}
+.snap-label{ color: var(--muted); font-size: 12px; }
+.snap-value{ font-weight: 800; margin-top: 6px; }
 
-/* 2-column content */
-.grid-2{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-/* preview image */
 .preview-link{
   display:block;
   margin-top: 14px;
@@ -341,7 +323,6 @@ h1{
   display:block;
 }
 
-/* findings tiles */
 .findings{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -366,12 +347,7 @@ h1{
   line-height: 1.35;
 }
 
-/* responsive for project page */
 @media (max-width: 900px){
   .snapshot{ grid-template-columns: 1fr 1fr; }
-  .grid-2{ grid-template-columns: 1fr; }
   .findings{ grid-template-columns: 1fr; }
 }
-  
-
-
