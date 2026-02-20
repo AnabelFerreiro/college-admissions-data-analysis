@@ -229,7 +229,15 @@ h1{
   color:#334155;
   background:#fff;
 }
-
+/* ========== Tableau Embed ========== */
+.tableau-container{
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--card);
+}
 /* ========== Footer ========== */
 .footer{
   border-top: 1px solid var(--border);
