@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Retail Performance Data Notes | Anabel Ferreiro Perez</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Anabel Ferreiro Perez</div>
+      <div class="nav-links">
+        <a href="index.html#home" class="nav-pill">Home</a>
+        <a href="projects.html" class="nav-pill">Projects</a>
+        <button id="themeToggle" class="nav-pill theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hero" style="padding-top:36px;">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="breadcrumb">
+        <a href="projects.html">Projects</a>
+        <span class="crumb-sep">/</span>
+        <span>Retail Performance Analysis</span>
+        <span class="crumb-sep">/</span>
+        <span>Data Notes</span>
+      </div>
+
+      <h1 style="margin-top:10px;">Data Notes</h1>
+
+      <div class="subtitle">
+        Additional context about the dataset, methodology, and AI workflow used in the Retail Performance
+        Analysis: Sales, Profitability, and Discount Impact project.
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="card">
+        <h2 class="section-title">Project Context</h2>
+        <p style="color:var(--muted);">
+          This project was completed as the CAI 3801 final project. It combines an interactive Tableau
+          dashboard with an AI agent workflow that turns dashboard findings into an automated executive
+          summary email.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="card">
+        <h2 class="section-title">Business Question</h2>
+        <p style="color:var(--muted);">
+          How do discounting practices affect sales and profitability across categories and regions, and
+          how can analytics-driven recommendations be communicated to decision-makers efficiently?
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="card">
+        <h2 class="section-title">Dataset</h2>
+        <ul style="color:var(--muted); line-height:1.8;">
+          <li>Transactional retail data including sales, profit, discount, category, sub-category, and region</li>
+          <li>Order-level dates used to support time-series forecasting</li>
+          <li>Discount rates analyzed alongside profit margin to assess pricing impact</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="card">
+        <h2 class="section-title">Methodology</h2>
+        <ul style="color:var(--muted); line-height:1.8;">
+          <li>Built a 5-chart Tableau dashboard with cross-chart filter actions for drilling from region to sub-category</li>
+          <li>Added a What-If parameter to simulate the profit impact of adjusting discount rates</li>
+          <li>Used Tableau's forecasting feature to project near-term sales trends</li>
+          <li>Exported dashboard findings to a PDF report for downstream automation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="card">
+        <h2 class="section-title">AI Workflow</h2>
+        <ul style="color:var(--muted); line-height:1.8;">
+          <li>Built a 2-agent sequential workflow in CrewAI Studio</li>
+          <li>Agent 1 used PDFSearchTool to extract verified findings from the exported dashboard report</li>
+          <li>Agent 2 (GPT-4.1) drafted a professional executive summary and sent it via the Gmail integration</li>
+          <li>The pipeline runs end-to-end with no manual write-up required</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="card">
+        <h2 class="section-title">Key Insight</h2>
+        <p style="color:var(--muted);">
+          Profitability and discounting are closely linked: several sub-categories become unprofitable
+          past a certain discount threshold. The What-If scenario showed that trimming discounts on
+          low-margin sub-categories could recover meaningful profit without significant sales loss.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="actions">
+        <a class="btn primary" href="retail_performance_project.html">Back to Project</a>
+        <a class="btn ghost" href="index.html#projects">Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      © 2026 Anabel Ferreiro Perez — Built with GitHub Pages
+    </div>
+  </div>
+
+  <script src="theme.js"></script>
+
+</body>
+</html>
