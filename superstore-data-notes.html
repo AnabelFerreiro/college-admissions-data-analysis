@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Superstore Data Notes | Anabel Ferreiro Perez</title>
   <link rel="stylesheet" href="style.css" />
-  <style>body{background: pink !important;}</style>
 </head>
 
 <body>
@@ -16,7 +15,7 @@
       <div class="nav-links">
         <a href="index.html#home" class="nav-pill">Home</a>
         <a href="projects.html" class="nav-pill">Projects</a>
-        <button id="themeToggle" class="nav-pill theme-toggle">
+        <button id="themeToggle" class="nav-pill theme-toggle" aria-label="Toggle theme" title="Toggle theme">
           <span class="theme-icon">🌙</span>
         </button>
       </div>
@@ -107,7 +106,7 @@
   <div class="container section">
     <div style="max-width:800px; margin:0 auto;">
       <div class="actions">
-        <a class="btn primary" href="superstore-project.html">Back to Project</a>
+        <a class="btn primary" href="superstore_project.html">Back to Project</a>
         <a class="btn ghost" href="index.html#projects">Back to Home</a>
       </div>
     </div>
@@ -119,23 +118,7 @@
     </div>
   </div>
 
-  <script>
-    const toggle = document.getElementById("themeToggle");
-    const icon = toggle.querySelector(".theme-icon");
-    const root = document.documentElement;
-
-    const savedTheme = localStorage.getItem("theme") || "light";
-    root.setAttribute("data-theme", savedTheme);
-    icon.textContent = savedTheme === "dark" ? "☀️" : "🌙";
-
-    toggle.addEventListener("click", () => {
-      const current = root.getAttribute("data-theme");
-      const next = current === "dark" ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      localStorage.setItem("theme", next);
-      icon.textContent = next === "dark" ? "☀️" : "🌙";
-    });
-  </script>
+  <script src="theme.js"></script>
 
 </body>
 </html>

@@ -31,8 +31,7 @@
       <div>
         <h1>Data Analytics Portfolio</h1>
         <div class="subtitle">
-          Business Analytics & Information Systems (Cybersecurity concentration) student at the University of South Florida.
-          Interested in Data Analyst internships.
+          Business Analytics & Information Systems (Cybersecurity concentration) student at USF — 3.97 GPA, graduating Summer 2027. Seeking roles in data analytics, business intelligence, and AI strategy.
         </div>
 
         <div class="actions">
@@ -74,6 +73,10 @@
       <span class="tag">Dashboard Design</span>
       <span class="tag">Power BI</span>
       <span class="tag">Storytelling with Data</span>
+      <span class="tag">Python (Pandas, pipelines)</span>
+      <span class="tag">SQL (MySQL)</span>
+      <span class="tag">Google Cloud / Vertex AI</span>
+      <span class="tag">AWS (AI Practitioner)</span>
     </div>
   </div>
 
@@ -127,24 +130,7 @@
   <div class="footer">
     <div class="container">© 2026 Anabel Ferreiro Perez — Built with GitHub Pages</div>
   </div>
- <script>
-  const toggle = document.getElementById("themeToggle");
-  const icon = toggle.querySelector(".theme-icon");
-  const root = document.documentElement;
-
-  // default theme
-  const savedTheme = localStorage.getItem("theme") || "light";
-  root.setAttribute("data-theme", savedTheme);
-  icon.textContent = savedTheme === "dark" ? "☀️" : "🌙";
-
-  toggle.addEventListener("click", () => {
-    const current = root.getAttribute("data-theme");
-    const next = current === "dark" ? "light" : "dark";
-    root.setAttribute("data-theme", next);
-    localStorage.setItem("theme", next);
-    icon.textContent = next === "dark" ? "☀️" : "🌙";
-  });
-</script>
+  <script src="theme.js"></script>
 
 </body>
 </html>

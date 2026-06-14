@@ -211,8 +211,8 @@ h1{
 }
 .tag{
   border: 1px solid var(--border);
-  background:#f8fafc;
-  color:#334155;
+  background: color-mix(in srgb, var(--card) 70%, var(--bg));
+  color: var(--text);
   padding: 8px 10px;
   border-radius: 999px;
   font-weight: 600;
@@ -254,8 +254,8 @@ h1{
   padding: 6px 8px;
   border: 1px solid var(--border);
   border-radius: 999px;
-  color:#334155;
-  background:#fff;
+  background: color-mix(in srgb, var(--card) 85%, var(--bg));
+  color: var(--text);
 }
 /* ========== Tableau Embed ========== */
 .tableau-container{
@@ -288,7 +288,6 @@ h1{
   padding: 0;
 }
 
-/* Mejoras para que dark/light se vean consistentes */
 .btn.ghost:hover{
   background: var(--accent);
   border-color: var(--accent);
@@ -297,15 +296,6 @@ h1{
   box-shadow: var(--shadow);
 }
 
-.tag{
-  background: color-mix(in srgb, var(--card) 70%, var(--bg));
-  color: var(--text);
-}
-
-.pill{
-  background: color-mix(in srgb, var(--card) 85%, var(--bg));
-  color: var(--text);
-}
 /* ========== Project Page Upgrades ========== */
 .breadcrumb{
   color: var(--muted);
