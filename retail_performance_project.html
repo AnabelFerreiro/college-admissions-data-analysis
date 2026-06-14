@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Retail Performance Analysis | Anabel Ferreiro Perez</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Anabel Ferreiro Perez</div>
+
+      <div class="nav-links">
+        <a href="index.html#home" class="nav-pill">Home</a>
+        <a href="projects.html" class="nav-pill">Projects</a>
+
+        <button id="themeToggle" class="nav-pill theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="container hero" style="padding-top:36px;">
+    <div style="max-width:90ch;">
+      <div class="breadcrumb">
+        <a href="projects.html">Projects</a>
+        <span class="crumb-sep">/</span>
+        <span>Retail Performance Analysis</span>
+      </div>
+
+      <h1 style="margin-top:10px;">Retail Performance Analysis: Sales, Profitability, and Discount Impact</h1>
+
+      <div class="subtitle">
+        A CAI 3801 final project combining an interactive Tableau dashboard with forecasting and What-If
+        scenario analysis, plus an AI agent workflow (CrewAI Studio + GPT-4.1) that extracts verified
+        analytics findings and automatically delivers an executive summary email via Gmail.
+      </div>
+
+      <div class="actions" style="margin-top:16px;">
+        <a class="btn primary"
+           href="https://public.tableau.com/app/profile/anabel.ferreiro.perez/viz/FinalProject_Part2_FerreiroPerez/Retail_AnalyticsDashboard?publish=yes"
+           target="_blank"
+           rel="noopener">
+          View Interactive Dashboard
+        </a>
+        <a class="btn ghost" href="index.html#projects">Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SNAPSHOT -->
+  <div class="container section">
+    <div class="snapshot">
+      <div class="snap-card">
+        <div class="snap-label">Tools</div>
+        <div class="snap-value">Tableau • CrewAI Studio • GPT-4.1</div>
+      </div>
+
+      <div class="snap-card">
+        <div class="snap-label">Methods</div>
+        <div class="snap-value">Filter Actions • What-If Analysis • Forecasting</div>
+      </div>
+
+      <div class="snap-card">
+        <div class="snap-label">Focus</div>
+        <div class="snap-value">Sales • Profitability • Discount Impact</div>
+      </div>
+
+      <div class="snap-card">
+        <div class="snap-label">Deliverable</div>
+        <div class="snap-value">Dashboard + Automated Executive Email</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD PREVIEW -->
+  <div class="container section">
+    <div class="card">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+        <div>
+          <h3 style="margin:0;">Dashboard Preview</h3>
+          <div style="color:var(--muted); font-size:14px; margin-top:6px;">
+            A 5-chart Tableau dashboard with cross-chart filter actions, a What-If discount scenario
+            parameter, and a sales forecast. Click the image to open the interactive dashboard.
+          </div>
+        </div>
+
+        <a class="btn ghost"
+           href="https://public.tableau.com/app/profile/anabel.ferreiro.perez/viz/FinalProject_Part2_FerreiroPerez/Retail_AnalyticsDashboard?publish=yes"
+           target="_blank"
+           rel="noopener">
+          Open Dashboard
+        </a>
+      </div>
+
+      <a class="preview-link"
+         href="https://public.tableau.com/app/profile/anabel.ferreiro.perez/viz/FinalProject_Part2_FerreiroPerez/Retail_AnalyticsDashboard?publish=yes"
+         target="_blank"
+         rel="noopener"
+         aria-label="Open interactive Tableau dashboard">
+        <img class="preview-img"
+             src="assets/Screenshot 2026-06-14 124709.png"
+             alt="Tableau dashboard preview (Retail Performance Analysis)">
+      </a>
+    </div>
+  </div>
+
+  <!-- AI WORKFLOW -->
+  <div class="container section">
+    <h2 class="section-title">AI-Powered Reporting Workflow</h2>
+
+    <div class="findings">
+      <div class="finding">
+        <div class="finding-title">Agent 1: Insight extraction</div>
+        <div class="finding-text">A CrewAI agent used PDFSearchTool to read the exported dashboard report and extract verified sales, profitability, and discount-impact findings, grounding outputs in the actual analysis rather than generic summaries.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-title">Agent 2: Executive email</div>
+        <div class="finding-text">A second agent, powered by GPT-4.1, transformed the verified findings into a concise, professional executive summary email and sent it automatically through the Gmail integration.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-title">Sequential pipeline</div>
+        <div class="finding-text">The two agents ran in a sequential workflow built in CrewAI Studio, demonstrating an end-to-end pipeline from raw analytics output to a delivered business communication with no manual write-up required.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY FINDINGS -->
+  <div class="container section">
+    <h2 class="section-title">Key Findings</h2>
+
+    <div class="findings">
+      <div class="finding">
+        <div class="finding-title">Discounts erode profitability</div>
+        <div class="finding-text">Higher discount rates were strongly associated with declining profit margins, with several sub-categories turning unprofitable beyond a certain discount threshold.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-title">Sales vs. profit don't align</div>
+        <div class="finding-text">Some of the highest-selling categories generated the weakest profit, while lower-volume categories delivered stronger margins — highlighting where discounting strategy needs to change.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-title">What-If scenario impact</div>
+        <div class="finding-text">Adjusting the discount-rate parameter in the What-If scenario showed that trimming discounts on low-margin sub-categories could recover a meaningful share of lost profit without major sales loss.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-title">Forecast trend</div>
+        <div class="finding-text">The sales forecast highlighted seasonal patterns and projected near-term trends, supporting more informed inventory and promotional planning.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-title">Filter-driven exploration</div>
+        <div class="finding-text">Cross-chart filter actions let users drill from region and category down to sub-category level, making it easy to isolate where discounting was most damaging to profit.</div>
+      </div>
+
+      <div class="finding">
+        <div class="finding-title">Automated executive reporting</div>
+        <div class="finding-text">The CrewAI workflow turned these findings into a ready-to-send executive email, showing how AI agents can close the loop between analysis and business communication.</div>
+      </div>
+    </div>
+
+    <div class="actions" style="margin-top:16px;">
+      <a class="btn primary"
+         href="https://public.tableau.com/app/profile/anabel.ferreiro.perez/viz/FinalProject_Part2_FerreiroPerez/Retail_AnalyticsDashboard?publish=yes"
+         target="_blank"
+         rel="noopener">
+        View Interactive Dashboard
+      </a>
+      <a class="btn ghost" href="index.html#projects">Back to Home</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">© 2026 Anabel Ferreiro Perez — Built with GitHub Pages</div>
+  </div>
+
+  <script src="theme.js"></script>
+
+</body>
+</html>
